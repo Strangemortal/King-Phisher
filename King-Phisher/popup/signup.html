@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Sign Up - King-Phisher</title>
+		<link rel="stylesheet" href="auth.css" />
+		<script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.87/build/spline-viewer.js"></script>
+	</head>
+	<body>
+		<spline-viewer url="https://prod.spline.design/povn-6uI3ZLrbPmz/scene.splinecode"></spline-viewer>
+		<div class="auth-container">
+			<img src="icons.jpeg" alt="PhishShield Logo" class="logo" />
+			<h1>Create Your Account</h1>
+
+			<form id="signupForm">
+				<input
+					type="text"
+					placeholder="Full Name"
+					id="signupName"
+					required
+				/>
+				<input
+					type="email"
+					placeholder="Email"
+					id="signupEmail"
+					required
+				/>
+				<input
+					type="password"
+					placeholder="Password"
+					id="signupPassword"
+					required
+				/>
+				<button type="submit">Sign Up</button>
+			</form>
+
+			<p>Already have an account? <a href="login.html">Login here</a></p>
+		</div>
+
+		<script src="signup.js" type="module"></script>
+	</body>
+</html>

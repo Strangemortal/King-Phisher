@@ -1,0 +1,57 @@
+{
+	"manifest_version": 3,
+	"name": "King-Phisher",
+	"version": "1.0",
+	"description": "Advanced AI-powered phishing detection for emails",
+	"permissions": [
+		"storage",
+		"activeTab",
+		"scripting",
+		"notifications",
+		"identity",
+		"tabs",
+		"webNavigation"
+	],
+	"host_permissions": [
+		"https://mail.google.com/*",
+		"https://outlook.live.com/*"
+	],
+	"background": {
+		"service_worker": "background.js",
+		"type": "module"
+	},
+	"action": {
+		"default_popup": "popup/popup.html",
+		"default_icon": {
+			"16": "icons.jpeg"
+		},
+		"default_title": "King-Phisher - Click for details"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://mail.google.com/*",
+				"https://outlook.live.com/*"
+			],
+			"js": ["content-script.js"],
+			"run_at": "document_idle",
+			"all_frames": false
+		}
+	],
+	"icons": {
+		"16": "icons.jpeg"
+	},
+	"web_accessible_resources": [
+		{
+			"resources": [
+				"ai-model/*",
+				"https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+			],
+			"matches": [
+				"https://mail.google.com/*",
+				"https://outlook.live.com/*"
+			]
+		}
+	],
+	"minimum_chrome_version": "91"
+}

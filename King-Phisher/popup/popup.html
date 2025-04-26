@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PhishGuard</title>
+  <link rel="stylesheet" href="popup.css">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.87/build/spline-viewer.js"></script>
+</head>
+<body>
+	<spline-viewer url="https://prod.spline.design/povn-6uI3ZLrbPmz/scene.splinecode"></spline-viewer>
+  <div class="container">
+    <h1>Email Phishing Detector</h1>
+    <textarea id="emailInput" placeholder="Paste your email content here..."></textarea>
+    <button onclick="checkPhishing()">Analyze Email</button>
+    <div id="result"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

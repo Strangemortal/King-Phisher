@@ -1,0 +1,95 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: #f4f4f9;
+}
+
+spline-viewer{
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Push behind all other content */
+    pointer-events: none; /* So user interactions pass through */
+    filter: blur(0px); /* Adjust blur strength here */
+    transform: scale(1.05)}
+.auth-container {
+	background: white;
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	width: 90%;
+	max-width: 400px;
+	text-align: center;
+}
+
+.logo {
+	width: 60px;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	margin-bottom: 1.5rem;
+	color: #333;
+}
+
+form input {
+	width: 100%;
+	padding: 0.75rem;
+	margin: 0.5rem 0;
+	border: 1px solid #ddd;
+	border-radius: 0.5rem;
+}
+.warning-popup {
+	position: fixed;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #f44336;
+	color: white;
+	padding: 12px 20px;
+	border-radius: 6px;
+	font-weight: bold;
+	z-index: 1000;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+	transition: opacity 0.4s ease;
+  }
+  
+  .hidden {
+	display: none;
+  }
+  
+
+button {
+	width: 100%;
+	padding: 0.75rem;
+	background-color: #007acc;
+	color: white;
+	border: none;
+	border-radius: 0.5rem;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 1rem;
+}
+
+button:hover {
+	background-color: #005f99;
+}
+
+p {
+	margin-top: 1rem;
+}
+
+a {
+	color: #007acc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
